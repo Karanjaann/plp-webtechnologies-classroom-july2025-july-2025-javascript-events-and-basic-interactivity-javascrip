@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page with JavaScript</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Example -->
+    <section>
+      <h2> Counter Game</h2>
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+      <p>Count: <span id="counter">0</span></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements Example -->
+    <section>
+      <h2> FAQ Section</h2>
+      <div class="faq">
+        <h3 class="question">What is JavaScript?</h3>
+        <p class="answer hidden">JavaScript is a programming language used to make web pages interactive.</p>
+      </div>
+      <div class="faq">
+        <h3 class="question">What is DOM?</h3>
+        <p class="answer hidden">DOM stands for Document Object Model—it represents the page structure.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation Example -->
+    <section>
+      <h2> Sign Up Form</h2>
+      <form id="signupForm">
+        <label>
+          Name:
+          <input type="text" id="name" required />
+          <small class="error" id="nameError"></small>
+        </label><br/>
+        
+        <label>
+          Email:
+          <input type="text" id="email" required />
+          <small class="error" id="emailError"></small>
+        </label><br/>
+        
+        <label>
+          Password:
+          <input type="password" id="password" required />
+          <small class="error" id="passwordError"></small>
+        </label><br/>
+        
+        <button type="submit">Register</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
